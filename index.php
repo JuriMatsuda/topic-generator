@@ -40,9 +40,9 @@ $curl = curl_init('https://qiita.com/api/v2/tags?page=1&per_page=100&sort=count'
 
 $option = [
     CURLOPT_CUSTOMREQUEST  => 'GET',
-    CURLOPT_RETURNTRANSFER => true,//curlの結果を自動で表示させない
+    CURLOPT_RETURNTRANSFER => true,
     CURLOPT_HTTPHEADER     => [
-        'Authorization: Bearer daac19d3414d2dc73679510ee889bdfc62ea646b',
+        'Authorization: Bearer 個人用アクセストークン',
         'Content-Type: application/json',
     ],
 ];
